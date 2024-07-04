@@ -1,1 +1,2 @@
 # CalculatorApp
+This is my first side project since starting my coding journey at Tech Elevator. My goal was to build a simple calculator that utilized the BigDecimal object to handle addition, subtraction, multiplication and division. I'm proud how I implemented BigDecimal, it was great practice. I also liked that I added in some jUnit tests and exception handling. If I went back and redid this project, I would want to implent an "OFF" and "ClEAR" function, as well as iron out some more bugs. Any constructive feedback is appreciated!
