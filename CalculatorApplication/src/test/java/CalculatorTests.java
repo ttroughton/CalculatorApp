@@ -3,6 +3,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class CalculatorTests {
     @Test
@@ -75,5 +76,18 @@ public class CalculatorTests {
         //Assert
         Assert.assertEquals("Did not update field", expected, calculator.getNum2());
 
+    }
+
+    @Test
+    public void two_hundred_divided_by_3_should_not_throw_an_exception(){
+        //Arrange
+        Calculator calculator = new Calculator();
+        BigDecimal testNum1 = new BigDecimal(200);
+        BigDecimal testNum2 = new BigDecimal(3);
+        BigDecimal expected = new BigDecimal(66.6666).setScale(4, RoundingMode.DOWN);
+        //Act
+        calculator.divideNums(testNum1, testNum2);
+        //Assert
+        Assert.assertEquals("Did not return expected value", expected, calculator.getNum1());
     }
 }

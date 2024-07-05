@@ -6,7 +6,6 @@ public class Display {
 
         System.out.println("Welcome to my calculator!");
 
-        System.out.println("When you're finished, enter 'off'");
 
         System.out.println("Please enter a number to get started:");
     }
@@ -18,6 +17,7 @@ public class Display {
         System.out.println("'-' for subtraction");
         System.out.println("'*' for multiplication");
         System.out.println("'/' for division");
+        System.out.println("If you're finished, enter 'off'");
     }
 
     public void promptForNumber(){
