@@ -12,7 +12,7 @@ public class Main {
         Display display = new Display();
         boolean isOn = true;
 
-
+//INSERTING COMMENT TO TEST GIT
         display.mainMenu();
         //User enters first number
         BigDecimal input = new BigDecimal(userInput.nextLine());
